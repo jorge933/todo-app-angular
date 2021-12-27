@@ -1,9 +1,15 @@
 @import "./../styles.scss";
 $very-dark-blue: hsl(235, 21%, 11%);
 $very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
 
 body {
   background: $very-light-gray;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
 }
 
 body.dark {
@@ -25,13 +31,46 @@ body.dark {
   background-image: url("./../assets/images/bg-mobile-dark.jpg");
 }
 
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 625px;
+  background: transparent;
+  padding: 0px 25px;
+  margin-top: 5vh;
+  h1 {
+    font-family: "Josefin Sans";
+    color: $white;
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 14px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 @media (min-width: 600px) {
   .img-bg {
     background-image: url("./../assets/images/bg-desktop-light.jpg");
     background-size: cover;
-    height: 35%;
+    height: 30%;
   }
   .img-bg.dark {
     background-image: url("./../assets/images/bg-desktop-dark.jpg");
+  }
+  header {
+    h1 {
+      font-size: 36px;
+      letter-spacing: 18px;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
