@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "./scss/reset";
 html,
 body {
   height: 100%;
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Josefin Sans", "Helvetica Neue", sans-serif;
+  background: hsl(235, 21%, 11%);
 }
+
+$very-dark-blue: hsl(235, 21%, 11%);
