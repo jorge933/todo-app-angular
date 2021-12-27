@@ -7,15 +7,14 @@ body {
   background: $very-light-gray;
 }
 
-:host {
-  display: flex;
-  justify-content: center;
-}
-
 body.dark {
   background: $very-dark-blue;
 }
 
+:host {
+  display: flex;
+  justify-content: center;
+}
 .img-bg {
   position: absolute;
   top: 0;
@@ -24,33 +23,40 @@ body.dark {
   background-size: cover;
   background-repeat: no-repeat;
   height: 35%;
-  width: 100%;
+  width: 100vw;
 }
 
 .img-bg.dark {
   background-image: url("./../assets/images/bg-mobile-dark.jpg");
 }
 
-header {
-  position: relative;
+.container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  height: 120px;
+  position: relative;
   width: 625px;
-  background: transparent;
   padding: 0px 25px;
-  margin-top: 5vh;
-  h1 {
-    font-family: "Josefin Sans";
-    color: $white;
-    font-size: 29px;
-    font-weight: 700;
-    letter-spacing: 14px;
-  }
-  img {
-    width: 24px;
-    height: 24px;
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background: transparent;
+    margin-top: 5vh;
+    h1 {
+      font-family: "Josefin Sans";
+      color: $white;
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: 14px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -63,14 +69,16 @@ header {
   .img-bg.dark {
     background-image: url("./../assets/images/bg-desktop-dark.jpg");
   }
-  header {
-    h1 {
-      font-size: 36px;
-      letter-spacing: 18px;
-    }
-    img {
-      width: 32px;
-      height: 32px;
+  .container {
+    header {
+      h1 {
+        font-size: 36px;
+        letter-spacing: 18px;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 }

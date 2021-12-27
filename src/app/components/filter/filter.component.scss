@@ -1,0 +1,25 @@
+$bright-blue: hsl(220, 98%, 61%);
+$dark-grayish-blue: hsl(236, 9%, 61%);
+$white: hsl(0, 0%, 100%);
+
+:host {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  color: $dark-grayish-blue;
+  background: $white;
+  font-weight: 700;
+  font-size: 18px;
+  height: 45px;
+  border-radius: 8px;
+  label {
+    margin-right: 20px;
+    cursor: pointer;
+    &.active {
+      color: $bright-blue;
+    }
+  }
+}

@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'todo-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss']
+  styleUrls: ['./filter.component.scss'],
 })
-export class FilterComponent implements OnInit {
+export class FilterComponent {
+  constructor(private hostElement: ElementRef) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  activeElement(event: Event) {
+    [...this.hostElement.nativeElement.children].forEach(
+      (element: HTMLLabelElement) => {
+        element.classList.remove('active');
+      }
+    );
+    (event.target as HTMLLabelElement).classList.add('active');
   }
-
 }
