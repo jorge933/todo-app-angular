@@ -1,20 +1,37 @@
 @import "./../styles.scss";
+$very-dark-blue: hsl(235, 21%, 11%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+body {
+  background: $very-light-gray;
+}
+
+body.dark {
+  background: $very-dark-blue;
+}
 
 .img-bg {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("./../assets/images/bg-mobile-dark.jpg");
+  background-image: url("./../assets/images/bg-mobile-light.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 35%;
   width: 100%;
 }
 
+.img-bg.dark {
+  background-image: url("./../assets/images/bg-mobile-dark.jpg");
+}
+
 @media (min-width: 600px) {
   .img-bg {
-    background-image: url("./../assets/images/bg-desktop-dark.jpg");
+    background-image: url("./../assets/images/bg-desktop-light.jpg");
     background-size: cover;
     height: 35%;
+  }
+  .img-bg.dark {
+    background-image: url("./../assets/images/bg-desktop-dark.jpg");
   }
 }
