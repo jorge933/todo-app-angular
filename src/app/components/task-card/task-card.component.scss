@@ -1,0 +1,34 @@
+@import '../../../scss/vars.scss';
+
+:host {
+    display: flex;
+    position: relative;
+
+    div {
+        display: flex;
+
+        mat-checkbox {
+          margin-right: 5px;
+        }
+
+        mat-card-title {
+          margin: 0 !important;
+          font-size: 17px;
+        }
+    }
+
+    mat-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: -2px;
+      border-radius: 50%;
+    }
+}
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: $bright-blue !important;
+}
+
+::ng-deep .mat-checkbox-frame{
+  border-color: $bright-blue !important;
+}

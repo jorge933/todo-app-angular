@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './task-card.component.html',
   styleUrls: ['./task-card.component.scss']
 })
-export class TaskCardComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class TaskCardComponent { }
