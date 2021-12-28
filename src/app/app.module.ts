@@ -9,6 +9,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { TaskCardComponent } from './components/task-card/task-card.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TaskCardComponent } from './components/task-card/task-card.component';
     TasksComponent,
     FilterComponent,
     TaskCardComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,
