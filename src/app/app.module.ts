@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { FilterComponent } from './components/filter/filter.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { TaskCardComponent } from './components/task-card/task-card.component';
 
 @NgModule({
-  declarations: [AppComponent, TasksComponent, FilterComponent],
+  declarations: [AppComponent, TasksComponent, FilterComponent, TaskCardComponent],
   imports: [BrowserModule, BrowserAnimationsModule, MatCardModule, MatCheckboxModule, FormsModule, MatIconModule, MatButtonModule],
   providers: [],
   bootstrap: [AppComponent],
