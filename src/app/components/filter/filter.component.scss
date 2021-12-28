@@ -1,6 +1,4 @@
-$bright-blue: hsl(220, 98%, 61%);
-$dark-grayish-blue: hsl(236, 9%, 61%);
-$white: hsl(0, 0%, 100%);
+@import '../../../scss/vars.scss';
 
 :host {
   position: relative;
