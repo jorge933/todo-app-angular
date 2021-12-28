@@ -1,0 +1,44 @@
+$bg: #25273c;
+
+:host {
+  background-color: $bg;
+  transform: translate(0, -30%);
+  border-radius: 5px;
+  width: min(70vh, 400px);
+  margin: 30px auto;
+  position: relative;
+  top: 45%;
+  transform: translateY(-95%);
+
+  mat-card-content {
+    display: flex;
+    position: relative;
+
+    div {
+        display: flex;
+
+        mat-checkbox {
+          margin-right: 5px;
+        }
+
+        mat-card-title {
+          margin: 0 !important;
+          font-size: 17px;
+        }
+    }
+
+    mat-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: -2px;
+    }
+  }
+
+  mat-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+}

@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasks.component.scss']
 })
 export class TasksComponent implements OnInit {
-
+  checked: boolean = false;
+  
   constructor() { }
 
   ngOnInit(): void {
